@@ -254,7 +254,7 @@ img {
 
 .content-links img {
     width: 100px;
-    height: 100px;
+    height: auto;
     padding-right: 20px;
     padding-bottom: 20px;
 }
