@@ -3,8 +3,10 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Homepage</title>
         <link rel="stylesheet" type="text/css" href="../index.css">
+        <script src="../theme.js"></script>
     </head>
 <body>
     <ul class="navbar">
@@ -50,7 +52,7 @@
                 <img src="..\logos\linkedin.png" alt="linkedin" style="width:30px; height:auto; padding-right:20px;">
             </a>
         </div>
-        <div class="link-container-nav"></div>
+        <div class="link-container-nav">
             <a href="https://46yuu.itch.io/">
                 <img src="..\logos\itch.png" alt="itch" style="width:30px; height:auto; margin-top:5px;">
             </a>
@@ -65,146 +67,136 @@
         <h1><span id="Name">Henri Tran</span></h1>
         <h1>Portfolio</h1>
     </div>
-    <div class="contents" >
+    <div class="contents">
         <div class="content-box">
             <h2>About me</h2>
-           <div class = "content">
-                <img src="..\profile.png" alt="profile" id="photo">
-                <ul>
-                    <li>Hello I'm Henri, also known as 46Yuu.</li>
-                    <li>Gameplay Programmer</li>
-                    <li>Looking for apprenticeship : 2026 - 2027</li>
-                    <li>Apprenticeship work-study schedule : 3 weeks at the company, 1 week at school</li>
-                    <h2 style="display: inline-block; padding-top:0px;">Education</h2>
-                    <li>2025 - 2027: MSc game development & FEDE European Master’s IT Expert at Gaming Campus.</li>
-                    <li>2023 - 2025: Computer Science Bachelor - specialized in video-game development at Gaming Campus.</li>
-                    <li>2020 - 2023: Computer Science Bachelor at Université Paris Cité.</li>
-                    <li>2017 - 2020: Highschool diploma specialized in Engineering Sciences and Mathematics at lycée Louis-Le-Grand.</li>
-                </ul>
+            <div class="about">
+                <img src="../profile.png" alt="Henri Tran" class="about-photo">
+                <div class="about-text">
+                    <p class="about-hello">Hi, I'm <strong>Henri</strong>, also known as <strong>46Yuu</strong>.</p>
+                    <p class="about-role"><strong>Gameplay Programmer</strong></p>
+                    <div class="callout">
+                        <p class="callout-title">Looking for an apprenticeship 2026 – 2027</p>
+                        <p class="callout-sub">Schedule: 3 weeks at the company, 1 week at school</p>
+                    </div>
+                    <div class="about-actions">
+                        <a class="button primary" href="projects.html">See my projects</a>
+                        <a class="button" href="../CV_TRAN_HENRI.pdf">Download my CV</a>
+                        <a class="button" href="contact.html">Contact me</a>
+                    </div>
+                </div>
             </div>
+            <h3>Education</h3>
+            <ol class="timeline">
+                <li>
+                    <span class="timeline-years">2025 – 2027</span>
+                    <span class="timeline-title">MSc Game Development, real-time 3D rendering</span>
+                    <span class="timeline-place">Gaming Campus · & FEDE European Master's IT Expert</span>
+                </li>
+                <li>
+                    <span class="timeline-years">2023 – 2025</span>
+                    <span class="timeline-title">Computer Science Bachelor, video game programming</span>
+                    <span class="timeline-place">Gaming Campus</span>
+                </li>
+                <li>
+                    <span class="timeline-years">2020 – 2023</span>
+                    <span class="timeline-title">Computer Science Bachelor</span>
+                    <span class="timeline-place">Université Paris Cité</span>
+                </li>
+                <li>
+                    <span class="timeline-years">2017 – 2020</span>
+                    <span class="timeline-title">High school diploma, Engineering Sciences & Mathematics</span>
+                    <span class="timeline-place">Lycée Louis-Le-Grand</span>
+                </li>
+            </ol>
         </div>
         <div class="content-box">
             <h2>Tech Stack</h2>
-            <div class = "content-vertical">
-                <div class = "tech-stack">
-                    <h2>Programming Languages</h2>
+            <div class="content-vertical">
+                <p class="stack-hint">Click a technology to see the projects that use it. The <span class="badge">3 ↗</span> badge shows how many projects.</p>
+                <div class="tech-stack">
+                    <h3>Programming languages</h3>
                     <div class="stack-items">
-                        <div class = "content-links">
-                            <img src="..\logos\c.png" alt="c" style="padding-left: 20px; padding-top: 20px;">
-                        </div>
-                        <div class = "content-links">
-                            <div class="hoverarea">
-                                <a href="en\project14.html">
-                                    <img src="..\logos\c++.png" alt="c++" style="padding-left: 20px; padding-top: 20px;">
-                                </a>
-                            </div>
-                        </div>
-                        <div class = "content-links">
-                            <div class="hoverarea">
-                                <a href="en\project12.html">
-                                    <img src="..\logos\csharp.png" alt="csharp" style="width: 100px; padding-left: 20px; padding-top: 20px;">
-                                </a>
-                            </div>
-                        </div>
-                        <div class = "content-links">
-                            <div class="hoverarea">
-                                <a href="en\project4.html">
-                                    <img src="..\logos\java.png" alt="java" style="padding-left: 20px; padding-top: 20px;">
-                                </a>
-                            </div>
-                        </div>
-                        <div class = "content-links">
-                            <div class="hoverarea">
-                                <a href="en\project23.html">
-                                    <img src="..\logos\python.png" alt="python" style="padding-left: 20px; padding-top: 20px;">
-                                </a>
-                            </div>
-                        </div>
-                        <div class = "content-links">
-                            <img src="..\logos\ocaml.png" alt="ocaml" style="padding-left: 20px; padding-top: 20px;">
-                        </div>
-                        <div class = "content-links">
-                            <div class="hoverarea">
-                                <a href="en\project20.html">
-                                    <img src="..\logos\verse.png" alt="verse" style="padding-left: 20px; padding-top: 20px;">
-                                </a>
-                            </div>
-                        </div>
+                        <a class="tech-tile" href="projects.html?tech=c" data-tech="c">
+                            <img src="../logos/c.png" alt="">
+                            <span class="tech-name">C</span>
+                        </a>
+                        <a class="tech-tile" href="projects.html?tech=c%2B%2B" data-tech="c++">
+                            <img src="../logos/c++.png" alt="">
+                            <span class="tech-name">C++</span>
+                        </a>
+                        <a class="tech-tile" href="projects.html?tech=csharp" data-tech="csharp">
+                            <img src="../logos/csharp.png" alt="">
+                            <span class="tech-name">C#</span>
+                        </a>
+                        <a class="tech-tile" href="projects.html?tech=java" data-tech="java">
+                            <img src="../logos/java.png" alt="">
+                            <span class="tech-name">Java</span>
+                        </a>
+                        <a class="tech-tile" href="projects.html?tech=python" data-tech="python">
+                            <img src="../logos/python.png" alt="">
+                            <span class="tech-name">Python</span>
+                        </a>
+                        <a class="tech-tile" href="projects.html?tech=ocaml" data-tech="ocaml">
+                            <img src="../logos/ocaml.png" alt="">
+                            <span class="tech-name">OCaml</span>
+                        </a>
+                        <a class="tech-tile" href="projects.html?tech=verse" data-tech="verse">
+                            <img src="../logos/verse.png" alt="">
+                            <span class="tech-name">Verse</span>
+                        </a>
                     </div>
                 </div>
-                <div class = "tech-stack">
-                    <h2>Web</h2>
+                <div class="tech-stack">
+                    <h3>Web</h3>
                     <div class="stack-items">
-                        <div class = "content-links">
-                            <div class="hoverarea">
-                                <a href="en\project9.html">
-                                    <img src="..\logos\html5.png" alt="html5" style="padding-left: 20px; padding-top: 20px;">
-                                </a>
-                            </div>
-                        </div>
-                        <div class = "content-links">
-                            <div class="hoverarea">
-                                <a href="en\project9.html">
-                                    <img src="..\logos\css3.png" alt="css3" style="padding-left: 20px; padding-top: 20px;">
-                                </a>
-                            </div>
-                        </div>
-                        <div class = "content-links">
-                            <div class="hoverarea">
-                                <a href="en\project9.html">
-                                    <img src="..\logos\javascript.png" alt="javascript" style="padding-left: 20px; padding-top: 20px;">
-                                </a>  
-                            </div>
-                        </div>
-                        <div class = "content-links">
-                            <div class="hoverarea">
-                                <a href="en\project9.html">
-                                    <img src="..\logos\php.png" alt="php" style="padding-left: 20px; padding-top: 20px;">
-                                </a>
-                            </div>
-                        </div>
-                        <div class = "content-links">
-                            <div class="hoverarea">
-                                <a href="en\project9.html">
-                                    <img src="..\logos\mysql.png" alt="mysql" style="padding-left: 20px; padding-top: 20px;">
-                                </a>
-                            </div>
-                        </div>
-                        <div class = "content-links">
-                            <img src="..\logos\node-js.svg" alt="nodejs" style="padding-left: 20px; padding-top: 20px;">
-                        </div>
+                        <a class="tech-tile" href="projects.html?tech=html" data-tech="html">
+                            <img src="../logos/html5.png" alt="">
+                            <span class="tech-name">HTML</span>
+                        </a>
+                        <a class="tech-tile" href="projects.html?tech=css" data-tech="css">
+                            <img src="../logos/css3.png" alt="">
+                            <span class="tech-name">CSS</span>
+                        </a>
+                        <a class="tech-tile" href="projects.html?tech=javascript" data-tech="javascript">
+                            <img src="../logos/javascript.png" alt="">
+                            <span class="tech-name">JavaScript</span>
+                        </a>
+                        <a class="tech-tile" href="projects.html?tech=php" data-tech="php">
+                            <img src="../logos/php.png" alt="">
+                            <span class="tech-name">PHP</span>
+                        </a>
+                        <a class="tech-tile" href="projects.html?tech=mysql" data-tech="mysql">
+                            <img src="../logos/mysql.png" alt="">
+                            <span class="tech-name">MySQL</span>
+                        </a>
+                        <a class="tech-tile" href="projects.html?tech=nodejs" data-tech="nodejs">
+                            <img src="../logos/node-js.svg" alt="">
+                            <span class="tech-name">Node.js</span>
+                        </a>
                     </div>
                 </div>
-                <div class = "tech-stack">
-                    <h2>Game Engine</h2>
+                <div class="tech-stack">
+                    <h3>Game engines</h3>
                     <div class="stack-items">
-                        <div class = "content-links">
-                            <div class="hoverarea">
-                                <a href="en\project12.html">
-                                    <img src="..\logos\unity.png" alt="unity" style="width:75px; padding-left: 20px; padding-top: 20px;">
-                                </a>
-                            </div>
-                        </div>
-                        <div class = "content-links">
-                            <div class="hoverarea">
-                                <a href="en\project1.html">
-                                    <img src="..\logos\godot.png" alt="godot" style="padding-left: 20px; padding-top: 20px;">
-                                </a>
-                            </div>
-                        </div>
-                        <div class = "content-links">
-                            <div class="hoverarea">
-                                <a href="en\project15.html">
-                                    <img src="..\logos\unreal.png" alt="unreal" style="padding-left: 20px; padding-top: 20px;">
-                                </a>
-                            </div>
-                        </div>
+                        <a class="tech-tile" href="projects.html?tech=unity" data-tech="unity">
+                            <img src="../logos/unity.png" alt="">
+                            <span class="tech-name">Unity</span>
+                        </a>
+                        <a class="tech-tile" href="projects.html?tech=godot" data-tech="godot">
+                            <img src="../logos/godot.png" alt="">
+                            <span class="tech-name">Godot</span>
+                        </a>
+                        <a class="tech-tile" href="projects.html?tech=unreal" data-tech="unreal">
+                            <img src="../logos/unreal.png" alt="">
+                            <span class="tech-name">Unreal Engine</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <div class="back-to-top">
         <a href="#Name">
             <img src="..\logos\arrow.png" alt="arrow">

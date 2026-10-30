@@ -16,17 +16,30 @@ window.addEventListener('scroll', () => {
 const modal = document.getElementById("myModal");
 const images = document.querySelectorAll(".content-images img");
 const modalImg = document.getElementById("img01");
-const captionText = document.getElementById("caption");
 const span = document.getElementsByClassName("close")[0];
+
+function closeModal() {
+    modal.style.display = "none";
+}
 
 images.forEach(img => {
     img.onclick = function(){
-        modal.style.display = "block";
+        modal.style.display = "flex";
         modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
+        modalImg.alt = this.alt;
     }
 });
 
-span.onclick = function() { 
-    modal.style.display = "none";
+// Some project pages have no image gallery.
+if (modal) {
+    span.onclick = closeModal;
+
+    // Clicking outside the image or pressing Escape also closes it.
+    modal.onclick = function(event) {
+        if (event.target !== modalImg) closeModal();
+    }
+
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape") closeModal();
+    });
 }

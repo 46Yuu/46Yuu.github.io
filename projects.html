@@ -3,8 +3,10 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Projets</title>
         <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="theme.js"></script>
         
 
     </head>
@@ -52,7 +54,7 @@
                 <img src="logos\linkedin.png" alt="linkedin" style="width:30px; height:auto; padding-right:20px;">
             </a>
         </div>
-        <div class="link-container-nav"></div>
+        <div class="link-container-nav">
             <a href="https://46yuu.itch.io/">
                 <img src="logos\itch.png" alt="itch" style="width:30px; height:auto; margin-top:5px;">
             </a>
@@ -66,164 +68,240 @@
     <div id="center-container">
         <h1><span id="Name">Projets</span></h1>
     </div>
+    <div class="filter-panel">
+        <div class="filter-chips" id="filter-chips" role="group" aria-label="Filtrer par technologie"></div>
+        <p class="filter-status" id="filter-status" aria-live="polite"></p>
+    </div>
     <div class="contents-projects">
-        <div class="content-box content-box-project" data-href="project18.html">
-            <div class = "content">
-                 <img src="projectScreenshots\project18\image6.png" alt="image-project18" id="project-img" style="padding-left: 1%;">
-             </div>
-             <h2>Canyon Carnage</h2>
-        </div>
+        <a class="content-box content-box-project" href="project18.html" data-tech="unreal c++" data-preview-images="projectScreenshots/project18/image.png|projectScreenshots/project18/image2.png|projectScreenshots/project18/image3.png|projectScreenshots/project18/image4.png|projectScreenshots/project18/image5.png|projectScreenshots/project18/image6.png">
+            <div class="project-thumb">
+                <img src="projectScreenshots\project18\image6.png" alt="Canyon Carnage" loading="lazy">
+            </div>
+            <div class="project-info">
+                <h2>Canyon Carnage</h2>
+                <div class="tags"><span class="tag" data-tech="unreal">Unreal Engine</span><span class="tag" data-tech="c++">C++</span></div>
+            </div>
+        </a>
 
-        <div class="content-box content-box-project" data-href="project12.html">
-            <div class = "content">
-                 <img src="projectScreenshots\project12\image3.png" alt="image-project12" id="project-img" style="width:75%; height:75%; padding-left: 13%;">
-             </div>
-             <h2>OreRush</h2>
-         </div>
+        <a class="content-box content-box-project" href="project12.html" data-tech="unity csharp" data-preview-video="projectScreenshots/project12/OreRush - Trailer.mp4">
+            <div class="project-thumb contain">
+                <img src="projectScreenshots\project12\image3.png" alt="OreRush" loading="lazy">
+            </div>
+            <div class="project-info">
+                <h2>OreRush</h2>
+                <div class="tags"><span class="tag" data-tech="unity">Unity</span><span class="tag" data-tech="csharp">C#</span></div>
+            </div>
+        </a>
 
-        <div class="content-box content-box-project" data-href="project19.html">
-            <div class = "content">
-                 <img src="projectScreenshots\project19\image.png" alt="image-project19" id="project-img" style="padding-left: 1%;">
-             </div>
-             <h2>Mission Maintenance</h2>
-        </div>
+        <a class="content-box content-box-project" href="project19.html" data-tech="unity csharp" data-preview-images="projectScreenshots/project19/image.png|projectScreenshots/project19/image2.png|projectScreenshots/project19/image3.png|projectScreenshots/project19/image4.png|projectScreenshots/project19/image5.png|projectScreenshots/project19/image6.png|projectScreenshots/project19/image7.png|projectScreenshots/project19/image8.png|projectScreenshots/project19/image9.png">
+            <div class="project-thumb">
+                <img src="projectScreenshots\project19\image.png" alt="Mission Maintenance" loading="lazy">
+            </div>
+            <div class="project-info">
+                <h2>Mission Maintenance</h2>
+                <div class="tags"><span class="tag" data-tech="unity">Unity</span><span class="tag" data-tech="csharp">C#</span></div>
+            </div>
+        </a>
 
-        <div class="content-box content-box-project" data-href="project20.html">
-            <div class = "content">
-                 <img src="projectScreenshots\project20\image.png" alt="image-project20" id="project-img" style="padding-left: 1%;">
-             </div>
-             <h2>Startup Tycoon</h2>
-        </div>
+        <a class="content-box content-box-project" href="project20.html" data-tech="unreal verse" data-preview-images="projectScreenshots/project20/image.png|projectScreenshots/project20/image2.png|projectScreenshots/project20/image3.png|projectScreenshots/project20/image4.png|projectScreenshots/project20/image5.png|projectScreenshots/project20/image6.png|projectScreenshots/project20/image7.png">
+            <div class="project-thumb">
+                <img src="projectScreenshots\project20\image.png" alt="Startup Tycoon" loading="lazy">
+            </div>
+            <div class="project-info">
+                <h2>Startup Tycoon</h2>
+                <div class="tags"><span class="tag" data-tech="unreal">Unreal Engine</span><span class="tag" data-tech="verse">Verse</span></div>
+            </div>
+        </a>
 
+        <a class="content-box content-box-project" href="project16.html" data-tech="unity csharp" data-preview-images="projectScreenshots/project16/imagejaquette.png|projectScreenshots/project16/image.jpg|projectScreenshots/project16/image2.jpg|projectScreenshots/project16/image3.jpg|projectScreenshots/project16/image4.jpg|projectScreenshots/project16/image5.jpg">
+            <div class="project-thumb contain">
+                <img src="projectScreenshots\project16\imageLogo.png" alt="Depths of Hue" loading="lazy">
+            </div>
+            <div class="project-info">
+                <h2>Depths of Hue</h2>
+                <div class="tags"><span class="tag" data-tech="unity">Unity</span><span class="tag" data-tech="csharp">C#</span></div>
+            </div>
+        </a>
 
-        <div class="content-box content-box-project" data-href="project16.html">
-            <div class = "content">
-                 <img src="projectScreenshots\project16\imageLogo.png" alt="image-project16" id="project-img" style="width:80%; height:100%; padding-left: 12%;">
-             </div>
-             <h2>Depths of Hue</h2>
-         </div>
+        <a class="content-box content-box-project" href="project10.html" data-tech="unity csharp" data-preview-images="projectScreenshots/project10/image.png|projectScreenshots/project10/image2.png|projectScreenshots/project10/image3.png|projectScreenshots/project10/image4.png">
+            <div class="project-thumb">
+                <img src="projectScreenshots\project10\image.png" alt="Dance Dance Summoner" loading="lazy">
+            </div>
+            <div class="project-info">
+                <h2>Dance Dance Summoner</h2>
+                <div class="tags"><span class="tag" data-tech="unity">Unity</span><span class="tag" data-tech="csharp">C#</span></div>
+            </div>
+        </a>
 
-        <div class="content-box content-box-project" data-href="project10.html">
-            <div class = "content">
-                 <img src="projectScreenshots\project10\image.png" alt="image-project10" id="project-img" style="padding-left: 1%;">
-             </div>
-             <h2>Dance Dance Summoner</h2>
-         </div>
+        <a class="content-box content-box-project" href="project1.html" data-tech="godot csharp" data-preview-images="projectScreenshots/project1/image1.png|projectScreenshots/project1/image2.png|projectScreenshots/project1/image3.png|projectScreenshots/project1/image4.png|projectScreenshots/project1/image5.png|projectScreenshots/project1/image6.png">
+            <div class="project-thumb contain">
+                <img src="projectScreenshots\project1\image.png" alt="LoopOut" loading="lazy">
+            </div>
+            <div class="project-info">
+                <h2>LoopOut</h2>
+                <div class="tags"><span class="tag" data-tech="godot">Godot</span><span class="tag" data-tech="csharp">C#</span></div>
+            </div>
+        </a>
 
-         <div class="content-box content-box-project" data-href="project1.html">
-            <div class = "content">
-                 <img src="projectScreenshots\project1\image.png" alt="image-project1" id="project-img" style="width:60%; height:60%; padding-left: 20%;">
-             </div>
-             <h2>LoopOut</h2>
-         </div>
+        <a class="content-box content-box-project" href="project23.html" data-tech="yolo python html css mysql" data-preview-images="projectScreenshots/project23/image.png|projectScreenshots/project23/image2.png|projectScreenshots/project23/image3.png|projectScreenshots/project23/image4.png|projectScreenshots/project23/image5.png|projectScreenshots/project23/image6.png">
+            <div class="project-thumb">
+                <img src="projectScreenshots\project23\image.png" alt="Riichi Tool" loading="lazy">
+            </div>
+            <div class="project-info">
+                <h2>Riichi Tool</h2>
+                <div class="tags"><span class="tag" data-tech="yolo">YOLO</span><span class="tag" data-tech="python">Python</span><span class="tag" data-tech="html">HTML</span><span class="tag" data-tech="css">CSS</span><span class="tag" data-tech="mysql">MySQL</span></div>
+            </div>
+        </a>
 
-        <div class="content-box content-box-project" data-href="project23.html">
-            <div class = "content">
-                 <img src="projectScreenshots\project23\image.png" alt="image-project23" id="project-img" style="padding-left: 1%;">
-             </div>
-             <h2>Riichi Tool</h2>
-        </div>
+        <a class="content-box content-box-project" href="project21.html" data-tech="unreal verse" data-preview-images="projectScreenshots/project21/image.png|projectScreenshots/project21/image2.png|projectScreenshots/project21/image3.png|projectScreenshots/project21/image4.png">
+            <div class="project-thumb">
+                <img src="projectScreenshots\project21\image.png" alt="Be A Shoe" loading="lazy">
+            </div>
+            <div class="project-info">
+                <h2>Be A Shoe</h2>
+                <div class="tags"><span class="tag" data-tech="unreal">Unreal Engine</span><span class="tag" data-tech="verse">Verse</span></div>
+            </div>
+        </a>
 
-        <div class="content-box content-box-project" data-href="project21.html">
-            <div class = "content">
-                 <img src="projectScreenshots\project21\image.png" alt="image-project21" id="project-img" style="padding-left: 1%;">
-             </div>
-             <h2>Be A Shoe</h2>
-        </div>
+        <a class="content-box content-box-project" href="project22.html" data-tech="unreal verse" data-preview-images="projectScreenshots/project22/image.png|projectScreenshots/project22/image2.png|projectScreenshots/project22/image3.png|projectScreenshots/project22/image4.png">
+            <div class="project-thumb">
+                <img src="projectScreenshots\project22\image.png" alt="Force League" loading="lazy">
+            </div>
+            <div class="project-info">
+                <h2>Force League</h2>
+                <div class="tags"><span class="tag" data-tech="unreal">Unreal Engine</span><span class="tag" data-tech="verse">Verse</span></div>
+            </div>
+        </a>
 
-        <div class="content-box content-box-project" data-href="project22.html">
-            <div class = "content">
-                 <img src="projectScreenshots\project22\image.png" alt="image-project22" id="project-img" style="padding-left: 1%;">
-             </div>
-             <h2>Force League</h2>
-        </div>
+        <a class="content-box content-box-project" href="project14.html" data-tech="unreal c++" data-preview-images="projectScreenshots/project14/image.png|projectScreenshots/project14/image1.png|projectScreenshots/project14/image2.png">
+            <div class="project-thumb">
+                <img src="projectScreenshots\project14\image1.png" alt="Bhoole" loading="lazy">
+            </div>
+            <div class="project-info">
+                <h2>Bhoole</h2>
+                <div class="tags"><span class="tag" data-tech="unreal">Unreal Engine</span><span class="tag" data-tech="c++">C++</span></div>
+            </div>
+        </a>
 
-         <div class="content-box content-box-project" data-href="project14.html">
-            <div class = "content">
-                 <img src="projectScreenshots\project14\image1.png" alt="image-project14" id="project-img">
-             </div>
-             <h2>Bhoole</h2>
-         </div>
+        <a class="content-box content-box-project" href="project15.html" data-tech="unreal c++" data-preview-images="projectScreenshots/project15/image.png">
+            <div class="project-thumb">
+                <img src="projectScreenshots\project15\image.png" alt="AstroRev" loading="lazy">
+            </div>
+            <div class="project-info">
+                <h2>AstroRev</h2>
+                <div class="tags"><span class="tag" data-tech="unreal">Unreal Engine</span><span class="tag" data-tech="c++">C++</span></div>
+            </div>
+        </a>
 
-         <div class="content-box content-box-project" data-href="project15.html">
-            <div class = "content">
-                 <img src="projectScreenshots\project15\image.png" alt="image-project15" id="project-img">
-             </div>
-             <h2>AstroRev</h2>
-         </div>
+        <a class="content-box content-box-project" href="project17.html" data-tech="unity csharp" data-preview-youtube="MXUnKYjnb-o">
+            <div class="project-thumb">
+                <img src="projectScreenshots\project17\image.png" alt="R.A.M.P" loading="lazy">
+            </div>
+            <div class="project-info">
+                <h2>R.A.M.P</h2>
+                <div class="tags"><span class="tag" data-tech="unity">Unity</span><span class="tag" data-tech="csharp">C#</span></div>
+            </div>
+        </a>
 
-         <div class="content-box content-box-project" data-href="project17.html">
-            <div class = "content">
-                 <img src="projectScreenshots\project17\image.png" alt="image-project17" id="project-img" style="padding-left: 2%;">
-             </div>
-             <h2>R.A.M.P</h2>
-         </div>
+        <a class="content-box content-box-project" href="project13.html" data-tech="unity csharp" data-preview-video="projectScreenshots/project13/StaySoul! Trailer for a game jam (FR).mp4">
+            <div class="project-thumb">
+                <img src="projectScreenshots\project13\image5.png" alt="StaySoul" loading="lazy">
+            </div>
+            <div class="project-info">
+                <h2>StaySoul</h2>
+                <div class="tags"><span class="tag" data-tech="unity">Unity</span><span class="tag" data-tech="csharp">C#</span></div>
+            </div>
+        </a>
 
-         <div class="content-box content-box-project" data-href="project13.html">
-            <div class = "content">
-                 <img src="projectScreenshots\project13\image5.png" alt="image-project13" id="project-img" style="padding-left: 2%;">
-             </div>
-             <h2>StaySoul</h2>
-         </div>
-        
-       
-        <div class="content-box content-box-project" data-href="project2.html">
-            <div class = "content">
-                 <img src="projectScreenshots\project2\image.png" alt="image-project2" id="project-img">
-             </div>
-             <h2>BallGame</h2>
-         </div>
+        <a class="content-box content-box-project" href="project2.html" data-tech="unity csharp" data-preview-video="projectScreenshots/project2/ballGame.mp4">
+            <div class="project-thumb">
+                <img src="projectScreenshots\project2\image.png" alt="BallGame" loading="lazy">
+            </div>
+            <div class="project-info">
+                <h2>BallGame</h2>
+                <div class="tags"><span class="tag" data-tech="unity">Unity</span><span class="tag" data-tech="csharp">C#</span></div>
+            </div>
+        </a>
 
-         <div class="content-box content-box-project" data-href="project11.html">
-            <div class = "content">
-                 <img src="projectScreenshots\project11\image.png" alt="image-project11" id="project-img">
-             </div>
-             <h2>Graphic Engine</h2>
-         </div>
+        <a class="content-box content-box-project" href="project11.html" data-tech="opengl c++" data-preview-images="projectScreenshots/project11/image.png|projectScreenshots/project11/image2.png|projectScreenshots/project11/image3.png">
+            <div class="project-thumb">
+                <img src="projectScreenshots\project11\image.png" alt="Graphic Engine" loading="lazy">
+            </div>
+            <div class="project-info">
+                <h2>Graphic Engine</h2>
+                <div class="tags"><span class="tag" data-tech="opengl">OpenGL</span><span class="tag" data-tech="c++">C++</span></div>
+            </div>
+        </a>
 
-         <div class="content-box content-box-project" data-href="project3.html">
-            <div class = "content">
-                 <img src="projectScreenshots\project3\image.png" alt="image-project3" id="project-img">
-             </div>
-             <h2>ChocoBlast</h2>
-         </div>
+        <a class="content-box content-box-project" href="project3.html" data-tech="unity csharp" data-preview-images="projectScreenshots/project3/image.png|projectScreenshots/project3/image2.png|projectScreenshots/project3/image3.png|projectScreenshots/project3/image4.png">
+            <div class="project-thumb">
+                <img src="projectScreenshots\project3\image.png" alt="ChocoBlast" loading="lazy">
+            </div>
+            <div class="project-info">
+                <h2>ChocoBlast</h2>
+                <div class="tags"><span class="tag" data-tech="unity">Unity</span><span class="tag" data-tech="csharp">C#</span></div>
+            </div>
+        </a>
 
-         <div class="content-box content-box-project" data-href="project4.html">
-            <div class = "content">
-                 <img src="projectScreenshots\project4\image4.png" alt="image-project4" id="project-img">
-             </div>
-             <h2>PokemonConquest Like</h2>
-         </div>
-         <div class="content-box content-box-project" data-href="project5.html">
-            <div class = "content">
-                 <img src="projectScreenshots\project5\image3.png" alt="image-project5" id="project-img">
-             </div>
-             <h2>DactyloGame</h2>
-         </div>
-         <div class="content-box content-box-project" data-href="project6.html">
-            <div class = "content">
-                 <img src="projectScreenshots\project6\image2.png" alt="image-project6" id="project-img">
-             </div>
-             <h2>ASCII-Fantasy</h2>
-         </div>
-         <div class="content-box content-box-project" data-href="project7.html">
-            <div class = "content">
-                 <img src="projectScreenshots\project7\image.png" alt="image-project7" id="project-img">
-             </div>
-             <h2>Dungeon-Crafter</h2>
-         </div>
-         <div class="content-box content-box-project" data-href="project8.html">
-            <div class = "content">
-                 <img src="projectScreenshots\project8\image5.png" alt="image-project8" id="project-img">
-             </div>
-             <h2>CataneJava</h2>
-         </div>
-         <div class="content-box content-box-project" data-href="project9.html">
-            <div class = "content">
-                 <img src="projectScreenshots\project9\image.png" alt="image-project9" id="project-img">
-             </div>
-             <h2>Friperie</h2>
-         </div>
+        <a class="content-box content-box-project" href="project4.html" data-tech="java" data-preview-images="projectScreenshots/project4/image.png|projectScreenshots/project4/image2.png|projectScreenshots/project4/image3.png|projectScreenshots/project4/image4.png|projectScreenshots/project4/image5.png">
+            <div class="project-thumb">
+                <img src="projectScreenshots\project4\image4.png" alt="PokemonConquest Like" loading="lazy">
+            </div>
+            <div class="project-info">
+                <h2>PokemonConquest Like</h2>
+                <div class="tags"><span class="tag" data-tech="java">Java</span></div>
+            </div>
+        </a>
+
+        <a class="content-box content-box-project" href="project5.html" data-tech="java" data-preview-images="projectScreenshots/project5/image.png|projectScreenshots/project5/image2.png|projectScreenshots/project5/image3.png|projectScreenshots/project5/image4.png|projectScreenshots/project5/image5.png|projectScreenshots/project5/image6.png">
+            <div class="project-thumb">
+                <img src="projectScreenshots\project5\image3.png" alt="DactyloGame" loading="lazy">
+            </div>
+            <div class="project-info">
+                <h2>DactyloGame</h2>
+                <div class="tags"><span class="tag" data-tech="java">Java</span></div>
+            </div>
+        </a>
+
+        <a class="content-box content-box-project" href="project6.html" data-tech="csharp" data-preview-images="projectScreenshots/project6/image.png|projectScreenshots/project6/image2.png|projectScreenshots/project6/image3.png|projectScreenshots/project6/image4.png|projectScreenshots/project6/image5.png|projectScreenshots/project6/image5.png">
+            <div class="project-thumb">
+                <img src="projectScreenshots\project6\image2.png" alt="ASCII-Fantasy" loading="lazy">
+            </div>
+            <div class="project-info">
+                <h2>ASCII-Fantasy</h2>
+                <div class="tags"><span class="tag" data-tech="csharp">C#</span></div>
+            </div>
+        </a>
+
+        <a class="content-box content-box-project" href="project7.html" data-tech="sfml c++" data-preview-images="projectScreenshots/project7/image.png|projectScreenshots/project7/image2.png|projectScreenshots/project7/image3.png|projectScreenshots/project7/image4.png">
+            <div class="project-thumb">
+                <img src="projectScreenshots\project7\image.png" alt="Dungeon-Crafter" loading="lazy">
+            </div>
+            <div class="project-info">
+                <h2>Dungeon-Crafter</h2>
+                <div class="tags"><span class="tag" data-tech="sfml">SFML</span><span class="tag" data-tech="c++">C++</span></div>
+            </div>
+        </a>
+
+        <a class="content-box content-box-project" href="project8.html" data-tech="java" data-preview-images="projectScreenshots/project8/image.png|projectScreenshots/project8/image2.png|projectScreenshots/project8/image3.png|projectScreenshots/project8/image4.png|projectScreenshots/project8/image5.png">
+            <div class="project-thumb">
+                <img src="projectScreenshots\project8\image5.png" alt="CataneJava" loading="lazy">
+            </div>
+            <div class="project-info">
+                <h2>CataneJava</h2>
+                <div class="tags"><span class="tag" data-tech="java">Java</span></div>
+            </div>
+        </a>
+
+        <a class="content-box content-box-project" href="project9.html" data-tech="html css javascript php mysql" data-preview-images="projectScreenshots/project9/image.png|projectScreenshots/project9/image2.png|projectScreenshots/project9/image3.png|projectScreenshots/project9/image4.png">
+            <div class="project-thumb">
+                <img src="projectScreenshots\project9\image.png" alt="Friperie" loading="lazy">
+            </div>
+            <div class="project-info">
+                <h2>Friperie</h2>
+                <div class="tags"><span class="tag" data-tech="html">HTML</span><span class="tag" data-tech="css">CSS</span><span class="tag" data-tech="javascript">JavaScript</span><span class="tag" data-tech="php">PHP</span><span class="tag" data-tech="mysql">MySQL</span></div>
+            </div>
+        </a>
     </div>
 
     <div class="back-to-top">
