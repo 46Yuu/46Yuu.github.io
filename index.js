@@ -13,7 +13,7 @@ document.querySelectorAll('.hoverarea').forEach(box => {
     });
 });
 
-// Count projects per technology from the projects page, so the badges stay in sync.
+// Find which technologies have projects, from the projects page, so the tiles stay in sync.
 fetch('projects.html')
     .then(response => response.text())
     .then(text => {
@@ -34,11 +34,9 @@ fetch('projects.html')
             }
             const badge = document.createElement('span');
             badge.className = 'badge';
-            badge.textContent = count + ' ↗';
+            badge.textContent = '↗';
             tile.appendChild(badge);
-            tile.title = isFr
-                ? `${count} projet${count > 1 ? 's' : ''} en ${name}`
-                : `${count} project${count > 1 ? 's' : ''} using ${name}`;
+            tile.title = isFr ? `Voir les projets en ${name}` : `See projects using ${name}`;
         });
     })
     .catch(() => {});
